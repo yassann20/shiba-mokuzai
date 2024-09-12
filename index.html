@@ -1,6 +1,9 @@
 <h3 class="subpagetitle">柴木材店のキレイで魅力ある現場づくり</h3>
 <div class="photoFrame" style="padding-top: 2rem">
-    <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group-12.png" alt="柴木材店はデジタルをフル活用し現場の見える化でお客様の不安解消に取り組んでいます">
+    <picture>
+        <source srcset="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group-12.png"  media="(min-width: 769px)">
+        <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group32-sp.png" alt="柴木材店はデジタルをフル活用し現場の見える化でお客様の不安解消に取り組んでいます">
+    </picture>
 </div>
 <h5 class="center bold" style="margin: 1.8rem 0 0.5rem">柴木材店の家づくりは“現場がきれい”</h5>
 <div class="sectionBox">
@@ -25,12 +28,15 @@
     </div>
 </div>
 <h5 class="underlined" style="padding: 1.2rem 0 0.9rem">柴木材店が取り組む<br class="spBr">「現場の見える化」のイメージ</h5>
-<div class="photoFrame" style="padding-top: 1.2rem">
-    <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group-31.jpg" alt="360度カメラで工事の進捗を可視化">
+<div class="photoFrame" style="padding-top: 2rem">
+    <picture>
+        <source srcset="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group-31.jpg"  media="(min-width: 769px)">
+        <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/Group35-sp.jpg" alt="360度カメラで工事の進捗を可視化">
+    </picture>
 </div>
 <div class="sectionBox" style="padding: 0.5rem;">
     <p>柴木材店では現場監督だけでなく、設計・品質管理・営業でお客様の現場を確認できるインフラを導入。</p>
-    <p>現場にいかないスタッフでもオンラインで現場を確認し、安全管理や品質管理のチェックを徹底しています。現場の状況は360度写真のVRで毎週ご報告します。</p>
+    <p>現場に行かないスタッフでもオンラインで現場を確認し、安全管理や品質管理のチェックを徹底しています。現場の状況は360度写真のVRで毎週ご報告します。</p>
 </div>
 <div class="center" style="padding: 5.0rem 0 1.0rem">
     <h5 class="strip" style="display: inline-block; margin: 0 auto; padding: 1rem 5rem;">
@@ -136,8 +142,8 @@
             <tr>
                 <th></th>
                 <th>柴木材店</th>
-                <th>A社<br class="pcBr"><span>施工管理にこだわる会社</span></th>
-                <th>B社<br class="pcBr"><span>一般的な会社</span></th>
+                <th>A社<br><span>施工管理にこだわる会社</span></th>
+                <th>B社<br><span>一般的な会社</span></th>
             </tr>
         </thead>
         <tbody>
@@ -265,17 +271,17 @@
     </table>
 </div>
 <style>
- @media (max-width: 1280px) {
+ @media (max-width: 768px) {
   .pc{
     display: none;
 }
 }
-@media (min-width: 1281px) {
+@media (min-width: 769px) {
   .pc{
     display: inline-block;
 }
 }
- @media (max-width: 1280px) {
+ @media (max-width: 768px) {
   .spBr{
     display: inline-block;
 }
@@ -283,7 +289,7 @@
     display: none;
 }
 }
-@media (min-width: 1281px) {
+@media (min-width: 769px) {
   .pcBr{
     display: inline-block;
 }
@@ -301,6 +307,10 @@
 font-size: 40px;
     font-weight: 700;
     color: #ec5233;
+}
+.photoFrame picture img{
+    width: 100%;
+    height: auto;
 }
 .flexSection{
     display: flex;
@@ -330,7 +340,7 @@ font-size: 40px;
     padding: 0.5rem 1.5rem;
     background-color: #538945;
     color: #FFFFFF;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .cameraImg{
     width: 100%;
@@ -343,26 +353,26 @@ font-size: 40px;
     gap: 1.5rem;
     padding: 0;
 }
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   .Features .featuresItem{
     max-width: 500px;
     width: calc(100% - 3rem);
 }
 }
-@media (min-width: 1281px) {
+@media (min-width: 769px) {
   .Features .featuresItem{
     max-width: 500px;
     width: calc(50% - 3rem);
 }
 }
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   .Features .map{
     width: 100%;
     aspect-ratio: 10/9;
     margin-top: 10px;
 }
 }
-@media (min-width: 1281px) {
+@media (min-width: 769px) {
   .Features .map{
     width: 100%;
     aspect-ratio: 16/9;
@@ -403,12 +413,12 @@ font-size: 40px;
     background-repeat: no-repeat;
     z-index: 10;
 }
-@media (min-width: 1281px) {
+@media (min-width: 769px) {
 .contentItem:nth-child(2)::after{
   right: -15%; /* 要素の左に配置 */
 }
 }
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
 .contentItem:nth-child(2)::after{
   right: -4%; /* 要素の左に配置 */
 }
@@ -428,6 +438,7 @@ font-size: 40px;
 }
 .comparisonTable{
     width: 100%;
+    padding-bottom: 4.5rem;
 }
 .contentLeft{
     width: 100%;
@@ -457,6 +468,7 @@ td {
 }
 th {
     color: #ffffff;
+    line-height: 40px;
 }
 th span{
     font-size: 16px;
@@ -488,7 +500,7 @@ th:nth-child(2)::before {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -1.5px;
+    left: 0;
     width: 3px;
     background-color: #63554c;
 }
@@ -499,7 +511,7 @@ th:nth-child(2)::after {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 1px;
+    right: 0;
     width: 3px;
     background-color: #63554c;
 }
@@ -509,7 +521,7 @@ th:nth-child(3) {
 th:nth-child(4) {
     background-color: #a7a4a1;
 }
-tr:nth-child(odd) td:nth-child(n + 2) {
+tr:nth-child(even) td:nth-child(n + 2) {
     background-color: #f6f6f5;
 }
 td:nth-child(1) {
