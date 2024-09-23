@@ -1,4 +1,4 @@
-<section class="section serif"></section>
+<section class="section serif">
     <div class="container" id="lightgallery">
         <div id="ank" class="serif" style="font-size: 0.85rem; padding: 0.5rem 0; border-top: 1px solid #aaa;">
             <a href="https://test.shiba-mokuzai.com" class="home">トップページ</a>
@@ -143,20 +143,36 @@
                 text-align: center;
             }
 
-            /*--ボタンエリア--*/
-
-            .narrowContent .button-area {
-                width: 100%;
-                text-align: center;
+            @media(min-width: 769px) {
+                .homeImg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    gap: 60px;
+                    row-gap: 0;
+                    flex-wrap: nowrap;
+                }
+                .homeImg img{
+                    display: block;
+                    width: 100%;
+                }
             }
 
-            .narrowContent .button-area a {
-                display: inline-block;
-                background: #EEFFDD;
-                border: solid 2px #888888;
-                max-width: 740px;
-                width: 100%;
-                text-align: center;
+            @media (max-width: 768px) {
+                .homeImg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    gap: 60px;
+                    row-gap: 0;
+                    flex-wrap: wrap;
+                }
+                .homeImg img{
+                    display: block;
+                    width: 100%;
+                }
             }
 
             .narrowContent .button-area a:nth-child(2) {
@@ -166,32 +182,14 @@
             div.infomap {
                 width: 100%;
             }
-
-            div.infomap div.infoOuter {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                justify-items: center;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 25px;
+            @media (min-width: 1025px) {
+                div.infoItem p {
+                    font-size: 0.8rem;
+                    word-break: break-all;
+                }
             }
 
-            div.infomap div.infoOuter div.infoItem {
-                width: 200px;
-                height: auto;
-            }
-
-            div.infomap div.infoOuter div.infoItem img {
-                display: inline-block;
-                width: 100%;
-                height: auto;
-            }
-
-            div.infomap div.infoOuter div.infoItem p {
-                font-size: 14px;
-                word-break: break-all;
-            }
+            
         </style>
         <div class="sanserif" style="text-align: center;"><span
                 class="leader">－</span><span>&emsp;環境共生型分譲街区&emsp;</span><span class="leader">－</span></div>
@@ -202,8 +200,7 @@
                     src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/hanabatake-gaikan-scaled-1.png">
             </div>
             <div class="sectionBox">
-                <p>つくば市花畑に、３棟の住まいからなる緑豊かな街「クラスコ花畑」が誕生します。2022年グッドデザイン賞を受賞した「クラスコ倉掛」に続く、クラスコシリーズ第2弾です。３棟の庭をつなげ、敷地全体が「小さな森」となるよう屋外環境をつくり込みました。
-                </p>
+                <p>つくば市花畑に、３棟の住まいからなる緑豊かな街「クラスコ花畑」が誕生しました。2022年グッドデザイン賞を受賞した「クラスコ倉掛」に続く、クラスコシリーズ第2弾です。３棟の庭をつなげ、敷地全体が「小さな森」となるよう屋外環境をつくり込みました。</p>
                 <p>外ごはんができるウッドデッキや家庭菜園も各戸に用意し、屋外も生活空間として最大限に活かします。緑豊かな屋外へと暮らしを広げ、のびのびと自然を感じるライフスタイルを形にしました。</p>
             </div>
             <!--end of sectionBox-->
@@ -228,8 +225,10 @@
             </div>
 
             <div class="button-area">
-                <a href="">ご見学はこちら</a>
-                <a href="">資料請求はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/modelhouse/model_hanabatake/">ご見学はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/form/contact/">資料請求はこちら</a>
             </div>
 
             <div class="scroll-fade-up">
@@ -247,7 +246,7 @@
                 <div class="textFloatBox">
                     <div class="photoFrame"><img
                             src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/03/MG_0244.jpg"
-                            style="width: 100%; height: 36vw; max-height: 460px; object-fit: cover;"></div>
+                            style="width: 100%; aspect-ratio: 1/1; max-height: 460px; object-fit: cover;"></div>
                     <div class="sectionBox">
                         <p>緑豊かな庭は、落ち葉や剪定など、お手入れが発生するのも事実です。ですが、緑はそれを上回る日常の豊かさをもたらしてくれると考えています。</p>
                         <p>入居後には、植栽のお手入れを造園家から学ぶワークショップも開催予定。B棟・C棟には薪ストーブも設置され、薪割りも日常になるかもしれません。</p>
@@ -267,31 +266,23 @@
                     <p>屋外だけでなく建築側も、柴木材店ならではのクオリティでつくり込みました。</p>
                     <p>構造には「木造ドミノ工法」を採用。木造ドミノ工法は、外壁と床面の強度を上げ「強い箱」をつくる工法です。室内に必要な柱は大黒柱１本ないし２本のみで、室内は広々とした空間が実現できます（木造ドミノ工法について詳しくはこちら）。可変性、メンテナンス性にも優れ、長く住み続けられる住まいです。
                     </p>
+                    <p><br>性能面でも、長期優良住宅で耐震等級3（最高等級）を実現しています。断熱性能も十分に担保され、夏涼しく冬暖かい住まいです。</p>
+                    <p>床にはマツの無垢材を使い、自然素材を活かしたナチュラルで居心地のよいインテリアの室内は、緑豊かな屋外と自然になじみ、年を経るごとに味わい深くなっていきます。</p>
                 </div>
                 <!--end of sectionBox-->
-
-                <div class="textFloatBox">
-                    <div class="photoFrame"><img
-                            src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/03/MG_0535.jpg"></div>
-                    <div class="sectionBox">
-                        <p>性能面でも、長期優良住宅で耐震等級3（最高等級）を実現しています。断熱性能も十分に担保され、夏涼しく冬暖かい住まいです。</p>
-                        <p>床にはマツの無垢材を使い、自然素材を活かしたナチュラルで居心地のよいインテリアの室内は、緑豊かな屋外と自然になじみ、年を経るごとに味わい深くなっていきます。</p>
-                    </div>
-                    <!--end of sectionBox-->
-                </div>
-                <!--end of textFloatBox-->
-
             </div>
             <!--end of narrowContent-->
 
             <div class="button-area">
-                <a href="">ご見学はこちら</a>
-                <a href="">資料請求はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/modelhouse/model_hanabatake/">ご見学はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/form/contact/">資料請求はこちら</a>
             </div>
 
             <div style="width: 100%; max-width: 560px; margin: 3rem auto;">
                 <div class="moviebox">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xm9CswsALQ4"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZxtblLsW6w?si=o81YyytTPgFOxOhV"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen class="embedmovie"></iframe>
@@ -325,7 +316,7 @@
                         <div class="photoFrame"><img
                                 src="https://test.shiba-mokuzai.com/wp-content/themes/shibamokuzai/content/images/gd22logo_en.svg">
                         </div>
-                        <div><a href="/gooddesign" class="sanserif"
+                        <div><a href="https://shiba-mokuzai.com/gooddesign" class="sanserif"
                                 style="display: inline-block; font-size: 0.85rem; margin-top: 0.75rem;">▶︎ 詳しくはこちら</a>
                         </div>
                     </div>
@@ -340,33 +331,34 @@
                             <tr>
                                 <th>所在地</th>
                                 <td colspan="3">茨城県つくば市花畑３丁目</td>
+                                <th>販売価格</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">各戸概要<br>（全3区画）</th>
+                                <td colspan="3">【Ａ区画】<br>土地面積　195.87㎡（59.2坪）　建物延面積　99.67㎡（30.15坪）</td>
+                                <td>4,950万円</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">【Ｂ区画】建築中<br>土地面積　196.88㎡（59.5坪）　建物延面積　105.22㎡（31.83坪）　</td>
+                                <td>済</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">【Ｃ区画】建築中<br>土地面積　250.85㎡（75.8坪）　建物延面積　106.21㎡（32.12坪）</td>
+                                <td>5,430万円</td>
                             </tr>
                             <tr>
                                 <th>交　　通</th>
-                                <td colspan="3">つくばエクスプレスつくば駅　6.3km<br>
+                                <td colspan="4">つくばエクスプレスつくば駅　6.3km<br>
                                     「関東鉄道バス つくばテクノパーク大穂行」の「花畑1丁目」停留所徒歩2分
                                 </td>
                             </tr>
                             <tr>
                                 <th>学校区</th>
-                                <td colspan="3">大曽根小学校　大穂中学校</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="4">各戸概要（全3区画）</th>
-                                <td colspan="3">【Ａ区画】<br>土地面積　195.87㎡（59.2坪）　建物延面積　99.67㎡（30.15坪）</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">【Ｂ区画】建築中<br>土地面積　196.88㎡（59.5坪）　建物延面積　105.22㎡（31.83坪）　</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">【Ｃ区画】建築中<br>土地面積　250.85㎡（75.8坪）　建物延面積　107.51㎡（32.52坪）　</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">【通路兼コモンスペース】（Ａ・Ｂ・Ｃ区画の共有地）<br>土地面積　140.8㎡（42.5坪）</td>
+                                <td colspan="4">大曽根小学校　大穂中学校</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p style="text-align: center; margin-bottom: 3rem;">価格・詳細は担当者までお問い合わせください。</p>
+                    <p style="text-align: center; margin-bottom: 3rem;">詳細は担当者までお問い合わせください。</p>
                 </div>
 
                 <!--家までの地図-->
@@ -376,10 +368,10 @@
             </div>
 
             <!--家の見取り図-->
+            <h6 class="centering">
+                <div>A棟間取り図</div>
+            </h6>
             <div class="homeImg">
-                <h6 class="centering">
-                    <div>A棟間取り図</div>
-                </h6>
                 <div class="img">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/a-left-img.png" alt="">
                 </div>
@@ -389,34 +381,26 @@
             </div>
 
             <!--家の見取り図-->
-            <div class="homeImg">
-                <h6 class="centering">
-                    <div>C棟間取り図</div>
-                </h6>
+            <h6 class="centering" style="padding-top: 2.0rem;">
+                <div>C棟間取り図</div>
+            </h6>
+            <div class="homeImg" style="padding-bottom: 1rem;">
+
                 <div class="img">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/c-left-img.png" alt="">
                 </div>
                 <div class="img">
-                    <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/a-right-img.png" alt="">
+                    <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/c-right-img.png" alt="">
                 </div>
             </div>
 
-            <div class="narrowContent2">
+            <div class="sectionBox">
+                <p style="text-align: center;">現在、A棟とC棟は期間限定モデルハウスとして公開しています。<br>詳しくはモデルハウスページをご覧ください。</p>
+            </div>
+            <a class="simpleButton sanserif yellowgreen"
+                href="https://test.shiba-mokuzai.com/modelhouse/model_hanabatake/">モデルハウスページはこちら</a>
                 <div class="sectionBox">
-
                     <div class="scroll-fade-up" style="margin: 2em 0;">
-                        <h6 class="centering">
-                            <div>モデルハウス</div>
-                        </h6>
-                        <div class="sectionBox">
-                            <p>現在、A棟とC棟は期間限定モデルハウスとして公開しています。
-                                詳しくはモデルハウスページをご覧ください。</p>
-                        </div>
-
-                        <div class="button-area">
-                            <a href="">モデルハウスページはこちら</a>
-                        </div>
-
                         <div class="scroll-fade-up">
                             <h6 class="centering">
                                 <div>アクセスマップ</div>
@@ -430,7 +414,7 @@
                                         aria-hidden="false" tabindex="0"></iframe>
                                 </div>
                             </div>
-                        </div>
+                        
                         <!--
                     <div class="photoFrame"><a href="https://test.shiba-mokuzai.com/modelhouse/model_hanabatake"><img
                                 src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/03/IGP0590_small.jpg"></a>
@@ -477,7 +461,7 @@
             <h6 class="centering">
                 <div>周辺施設</div>
             </h6>
-            <div class="infoOuter">
+            <div class="galleryBox hovG galleryVer2">
                 <div class="infoItem">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/info01.png" alt="">
                     <p>カスミ 1.2km</p>
@@ -496,7 +480,7 @@
                 </div>
                 <div class="infoItem">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/info05.png" alt="">
-                    <p>常陽銀行 aｋｍ</p>
+                    <p>常陽銀行 1.4ｋｍ</p>
                 </div>
                 <div class="infoItem">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/info06.png" alt="">
@@ -504,7 +488,7 @@
                 </div>
                 <div class="infoItem">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/info07.png" alt="">
-                    <p>コンビニ 220ｍm</p>
+                    <p>コンビニ 220m</p>
                 </div>
                 <div class="infoItem">
                     <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/info08.png" alt="">
@@ -521,10 +505,12 @@
             </div>
         </div>
 
-        <div class="narrowContent">
+        <div class="narrowContent" style="padding: 2rem 0;">
             <div class="button-area">
-                <a href="">ご見学はこちら</a>
-                <a href="">資料請求はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/modelhouse/model_hanabatake/">ご見学はこちら</a>
+                <a class="simpleButton sanserif yellowgreen"
+                    href="https://test.shiba-mokuzai.com/form/contact/">資料請求はこちら</a>
             </div>
         </div>
         <!--End of container-->

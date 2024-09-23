@@ -15,7 +15,7 @@
         「現場の見える化」によって現場がきれいに？！その秘密を解説いたします。
     </p>
 </div>
-<h5 class="underlined" style="padding: 1.2rem 0 0.5rem">「現場の見える化」が進んだ家づくり<span class="spanBig">3</span>のメリット</h5>
+<h5 class="underlined" style="padding: 1.2rem 0 0.5rem">「現場の見える化」が進んだ家づくり<span class="spanBig">3</span>つのメリット</h5>
 <div class="flexSection">
     <div class="contentImg">
         <img src="https://test.shiba-mokuzai.com/wp-content/uploads/2024/09/imgItem01.png" alt="">
@@ -106,7 +106,7 @@
         </div>
         <h5 class="underlined center">一般的な工務店</h5>
         <div class="sectionBox">
-            <p>品質管理チェックは現場監督の目が頼りになります。</p>
+            <p class="center">品質管理チェックは現場監督の目が頼りになります。</p>
         </div>
     </div>
     <div class="contentItem">
@@ -115,7 +115,7 @@
         </div>
         <h5 class="underlined center">柴木材店</h5>
         <div class="sectionBox">
-            <p>「複数人による確認体制」でより安全安心な家づくり。</p>
+            <p class="center">「複数人による確認体制」でより安全安心な家づくり。</p>
         </div>
     </div>
 </div>
@@ -157,7 +157,7 @@
                 <td>02. 基礎配筋検査<br class="pcBr"><span class="pc">▼</span></td>
                 <td><div class="green-circle-check"></div></td>
                 <td><div class="green-circle-check"></div></td>
-                <td><div class="silver-circle-check"></div></td>
+                <td><div class="black-circle-check"></div></td>
             </tr>
             <tr>
                 <td>03. 立上部型枠検査<br class="pcBr"><span class="pc">▼</span></td>
@@ -204,8 +204,8 @@
             <tr>
                 <td>10. 中間検査<br class="pcBr"><span class="pc">▼</span></td>
                 <td><div class="black-circle-check"></div></td>
-                <td><div class="brown-circle-check"></div></td>
-                <td><div class="silver-circle-check"></div></td>
+                <td><div class="black-circle-check"></div></td>
+                <td><div class="black-circle-check"></div></td>
             </tr>
             <tr>
                 <td>11. 壁防水検査<br class="pcBr"><span class="pc">▼</span></td>
@@ -264,8 +264,8 @@
             <tr>
                 <td>20. 完了検査<br class="pcBr"><span class="pc">▼</span></td>
                 <td><div class="black-circle-check"></div></td>
-                <td><div class="brown-circle-check"></div></td>
-                <td><div class="silver-circle-check"></div></td>
+                <td><div class="black-circle-check"></div></td>
+                <td><div class="black-circle-check"></div></td>
             </tr>
         </tbody>
     </table>
@@ -296,6 +296,9 @@
 .spBr{
     display: none;
 }
+}
+iframe span{
+    display: none;
 }
 .center{
     text-align: center!important;
@@ -395,6 +398,9 @@ font-size: 40px;
     position: relative;
     max-width: 500px;
     width: 100%;
+}
+.content02 .contentItem .underlined{
+    border: none!important;
 }
 @media (max-width: 1041px) {
 .contentItem:nth-child(1){
@@ -546,10 +552,10 @@ tr:nth-child(20) td:nth-child(2) {
     line-height: 20px;
     font-size: 16px;
     background: #538945;
-    color: #ffffff;
 }
 .green-circle-check::before {
     content: "✔";
+    color: #ffffff;
 }
 .black-circle-check {
     display: inline-block;
@@ -562,41 +568,9 @@ tr:nth-child(20) td:nth-child(2) {
     line-height: 20px;
     font-size: 16px;
     background: #000000;
-    color: #ffffff;
 }
 .black-circle-check::before {
     content: "✔";
-}
-.brown-circle-check {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #a99663;
-    border-radius: 50%;
-    position: relative;
-    text-align: center;
-    line-height: 20px;
-    font-size: 16px;
-    background: #a99663;
     color: #ffffff;
-}
-.brown-circle-check::before {
-    content: "✔";
-}
-.silver-circle-check {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #808080;
-    border-radius: 50%;
-    position: relative;
-    text-align: center;
-    line-height: 20px;
-    font-size: 16px;
-    background: #808080;
-    color: #ffffff;
-}
-.silver-circle-check::before {
-    content: "✔";
 }
 </style>
